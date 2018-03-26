@@ -13,7 +13,7 @@ public class IAnimalTest {
 	private static IAnimal animal;
 	
 	/* Méthode permettant de récupérer l'objet sur lequel on va effectuer les tests */
-	public IAnimal getObject() {
+	public static IAnimal getObject() {
 		//creation mock
 		IAnimal mock = mock(IAnimal.class);
 		//renvoie des valeurs 
@@ -25,7 +25,7 @@ public class IAnimalTest {
 	}
 	
 	@BeforeClass
-	public void setUp() {
+	public static void setUp() {
 		animal = getObject();
 	}
 	
