@@ -9,7 +9,6 @@
 		<version>0.1.0</version>
 		<name>Technique de tests M1</name>
 		<url>https://github.com/NoeCecillon/ceri-m1-test-2017</url>
-		<packaging>jar</packaging>
 		<dependencies>
 			<dependency>
 				<groupId>junit</groupId>
