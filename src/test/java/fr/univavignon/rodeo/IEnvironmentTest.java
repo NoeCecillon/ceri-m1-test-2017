@@ -40,7 +40,7 @@ public class IEnvironmentTest {
 	
 	@Test
 	public void testGetAreas() {
-		assertEquals(100, environment.getAreas());
+		assertEquals(15, environment.getAreas());
 	}
 	
 	@Test
