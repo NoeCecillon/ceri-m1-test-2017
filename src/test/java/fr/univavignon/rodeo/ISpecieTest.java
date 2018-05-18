@@ -40,6 +40,8 @@ public class ISpecieTest {
 	@Test
 	public void testGetAnimals() {
 		assertEquals(animals, specie.getAnimals());
+		//Vérifie la taille de la liste
+		assertEquals(2, specie.getAnimals().size());
 	}
 	
 	@Test

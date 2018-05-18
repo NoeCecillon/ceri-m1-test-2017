@@ -9,7 +9,6 @@ import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import fr.univavignon.rodeo.api.IAnimal;
 import fr.univavignon.rodeo.api.IEnvironment;
 import fr.univavignon.rodeo.api.ISpecie;
 
@@ -45,7 +44,15 @@ public class IEnvironmentTest {
 	
 	@Test
 	public void testGetSpecies() {
+		//Test du nombre d'elements
+		assertEquals(2, environment.getSpecies().size());
+		//Test de la liste
 		assertEquals(species, environment.getSpecies());
+		//Vérifie l'area du premier élément de la liste
+		assertEquals(5, environment.getSpecies().get(0).getArea());
+		//Teste les valeurs du premier animal de la première espèce de la liste
+		assertEquals(true, environment.getSpecies().get(0).getAnimals().get(0).isBoss());
+		assertEquals(100, environment.getSpecies().get(0).getAnimals().get(0).getXP());
 	}
 	
 }
